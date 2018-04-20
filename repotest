@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS Perso -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<!-- UTF -->
+		<meta charset="utf-8">
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<title>Caps de Rue, c'est de la frappe !</title>
+	</head>
+	<body>
+		<!-- Div banner -->
+		<div class="sticky-top">
+			<div class="banner d-flex align-items-center justify-content-center">
+				<div class="mr-auto p-2">
+					<img class="logocapsblanc" src="images/capsderueblanc.png" width=12%>
+				</div>
+				<div class="p-2">
+					<i class="far fa-user"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Div body -->
+		<div class="Titre">
+			<h1>Caps : Recherchez des parties près de chez vous</h1>
+		</div>
+		<!-- Div colonnes Maps/buttons -->
+		<div class="mapsandbutton container">
+			<div class="row">
+				<div class="col carte">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.3743744316143!2d5.381572323818433!3d43.28548103853132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0ae109c26bf%3A0xfc92f2dae6c6718f!2sCastellane!5e0!3m2!1sfr!2sfr!4v1523975667614" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Recherchez la partie la plus proche de chez vous</label>
+							<input class="form-control" type="yolo" name="yolo" placeholder="Sur le parking d'Auchan">
+						</div>
+						<button type="submit" class="btn btn-caps">Caps !</button>
+					</form>
+					<div>
+						<button type="button" class="btn btn-lg btn-caps btn-block" data-toggle="modal" data-target="#C2R">Créez votre événement !</button>
+					</div>
+					<div class="modal" tabindex="-1" role="dialog" id="C2R">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Organiser un événement !</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form id="FormCaps" action="https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/silent/" type="POST">
+										<div class="form-group">
+											
+											<input type="text" name="name-event" class="form-control" id="formGroupExampleInput" placeholder="Nom de ton event !" required>
+										</div>
+										<div class="form-group">
+											
+											<input type="email" name="mail-address" class="form-control" id="formGroupExampleInput2" placeholder="Ton adresse mail pour être prévenu ;)" required>
+										</div>
+										<div class="form-group">
+											
+											<input type="text" name="place" class="form-control" id="formGroupExampleInput3" placeholder="Ca se passe où ?" required>
+										</div>
+										<div class="form-group">
+											
+											<input id="date" name="date" type="date" required>
+											
+										</div>
+										<div class="form-group">
+											
+											<input type="text" name="event-description" class="form-control" id="formGroupExampleInput" placeholder="Ajoute une description pour ton event !">
+										</div>
+										
+										<div class="form-group">
+											
+											<input type="text" name="guests" class="form-control" id="formGroupExampleInput" placeholder="Inviter des amis (mail, nom,...)">
+										</div>
+										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Abandonner l'idée :(</button>
+										<button type="button" type="submit" value="Submit" class="btn btn-success"> Valider l'event ! </button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+				</div>
+			</div>	
+		</div>
+		<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js">// POST form data to zapier on submit
+$('#myForm').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url:'https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/silent/',
+        type:'post',
+        data:$('#myForm').serialize(),
+        success:function(){
+          // Redirect to another success page
+          window.location = "http://google.com";
+        }
+    });
+});</script>
+
+	</body>
+</html>
