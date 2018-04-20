@@ -44,76 +44,7 @@
 						</div>
 						<button type="submit" class="btn btn-caps">Caps !</button>
 					</form>
-					<div>
-						<button type="button" class="btn btn-lg btn-caps btn-block" data-toggle="modal" data-target="#C2R">Créez votre événement !</button>
-					</div>
-					<div class="modal" tabindex="-1" role="dialog" id="C2R">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title">Organiser un événement !</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<form id="FormCaps" action="https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/" type="POST">
-										<div class="form-group">
-											
-											<input type="text" name="name-event" class="form-control" id="formGroupExampleInput" placeholder="Nom de ton event !" required>
-										</div>
-										<div class="form-group">
-											
-											<input type="email" name="mail-address" class="form-control" id="formGroupExampleInput2" placeholder="Ton adresse mail pour être prévenu ;)" required>
-										</div>
-										<div class="form-group">
-											
-											<input type="text" name="place" class="form-control" id="formGroupExampleInput3" placeholder="Ca se passe où ?" required>
-										</div>
-										<div class="form-group">
-											
-											<input id="date" name="date" type="date" required>
-											
-										</div>
-										<div class="form-group">
-											
-											<input type="text" name="event-description" class="form-control" id="formGroupExampleInput" placeholder="Ajoute une description pour ton event !">
-										</div>
-										
-										<div class="form-group">
-											
-											<input type="text" name="guests" class="form-control" id="formGroupExampleInput" placeholder="Inviter des amis (mail, nom,...)">
-										</div>
-										
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-warning" data-dismiss="modal">Abandonner l'idée :(</button>
-										<button type="button" type="submit" value="Submit" class="btn btn-success"> Valider l'event ! </button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-				</div>
-			</div>	
-		</div>
-		<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js">// POST form data to zapier on submit
-$('#myForm').submit(function(e){
-    e.preventDefault();
-    $.ajax({
-        url:'https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/',
-        type:'post',
-        data:$('#myForm').serialize(),
-        success:function(){
-          // Redirect to another success page
-          window.location = "http://google.com";
-        }
-    });
-});</script>
+					<a class="typeform-share button" href="https://thomas887.typeform.com/to/nHHqjc" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#C23616;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:5px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Créez ton évent ! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 	</body>
 </html>
