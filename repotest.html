@@ -57,7 +57,7 @@
 									</button>
 								</div>
 								<div class="modal-body">
-									<form id="FormCaps" action="https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/silent/" type="POST">
+									<form id="FormCaps" action="https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/" type="POST">
 										<div class="form-group">
 											
 											<input type="text" name="name-event" class="form-control" id="formGroupExampleInput" placeholder="Nom de ton event !" required>
@@ -105,7 +105,7 @@
 $('#myForm').submit(function(e){
     e.preventDefault();
     $.ajax({
-        url:'https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/silent/',
+        url:'https://hooks.zapier.com/hooks/catch/3183368/fiaqhw/',
         type:'post',
         data:$('#myForm').serialize(),
         success:function(){
